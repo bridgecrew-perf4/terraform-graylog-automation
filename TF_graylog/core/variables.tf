@@ -3,9 +3,9 @@ variable "api_endpoint" {
   description = "Graylog endpoint"
 }
 
-variable "session_token" {
+variable "token" {
   type        = string
-  description = "Graylog session token"
+  description = "Graylog token"
 }
 
 variable "auth_method" {

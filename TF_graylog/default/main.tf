@@ -3,6 +3,10 @@ module "graylog_capability" {
 
   api_endpoint  = "http://localhost:9000/api"
   auth_method   = "token"
-  session_token = "1o8oqq9qv00sf6elj42rejfger9fvfr5uvkel6aamufcer1p91b6"
+  token = var.api_token
   
+}
+
+variable "api_token" {
+  description   = "Temporary token for API access."
 }
